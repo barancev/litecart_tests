@@ -50,11 +50,11 @@ a {
 <table>
 <tr>
 <td>result:</td>
-<td>passed</td>
+<td>failed</td>
 </tr>
 <tr>
 <td>totalTime:</td>
-<td>6</td>
+<td>0</td>
 </tr>
 <tr>
 <td>numTestTotal:</td>
@@ -62,15 +62,15 @@ a {
 </tr>
 <tr>
 <td>numTestPasses:</td>
-<td>5</td>
-</tr>
-<tr>
-<td>numTestFailures:</td>
 <td>0</td>
 </tr>
 <tr>
+<td>numTestFailures:</td>
+<td>5</td>
+</tr>
+<tr>
 <td>numCommandPasses:</td>
-<td>9</td>
+<td>0</td>
 </tr>
 <tr>
 <td>numCommandFailures:</td>
@@ -78,25 +78,25 @@ a {
 </tr>
 <tr>
 <td>numCommandErrors:</td>
-<td>0</td>
+<td>5</td>
 </tr>
 <tr>
 <td>Selenium Version:</td>
-<td>2.47</td>
+<td>2.48</td>
 </tr>
 <tr>
 <td>Selenium Revision:</td>
-<td>.1</td>
+<td>.0</td>
 </tr>
 <tr>
 <td>
 <table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
-<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
-<tr class="  status_passed"><td><a href="#testresult0">add_to_card</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult1">remove_from_card</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult2">preview_image</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult3">verify_categories</a></td></tr>
-<tr class="  status_passed"><td><a href="#testresult4">verify_homepage_blocks</a></td></tr>
+<tr class="title     status_failed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_failed"><td><a href="#testresult0">add_to_card</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult1">remove_from_card</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult2">preview_image</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult3">verify_categories</a></td></tr>
+<tr class="  status_failed"><td><a href="#testresult4">verify_homepage_blocks</a></td></tr>
 </tbody></table>
 
 
@@ -107,7 +107,7 @@ a {
 <td><a name="testresult0">add_to_card.html</a><br/><div>
 <table border="1" cellpadding="1" cellspacing="1">
 <thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">add_to_card</td></tr>
+<tr class="title status_failed"><td rowspan="1" colspan="3">add_to_card</td></tr>
 </thead><tbody>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>open</td>
@@ -116,75 +116,75 @@ a {
 </tr>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>storeEval</td>
-	<td>Math.floor(1 + Math.random()*9)</td>
+	<td>Math.floor(1 + Math.random()*19)</td>
 	<td>amount</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="  status_failed" style="cursor: pointer;">
 	<td>click</td>
 	<td>css=li.product img</td>
-	<td></td>
+	<td>Element&nbsp;css=li.product&nbsp;img&nbsp;not&nbsp;found</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>waitForElementPresent</td>
 	<td>name=quantity</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>storeText</td>
 	<td>css=h1.title</td>
 	<td>title</td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertText</td>
 	<td>css=span.price</td>
 	<td>$20</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>storeText</td>
 	<td>css=span.price</td>
 	<td>price</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>storeEval</td>
 	<td>"${price}".substring(1)</td>
 	<td>price</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>storeEval</td>
 	<td>${amount}*${price}</td>
 	<td>total</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>type</td>
 	<td>name=quantity</td>
 	<td>${amount}</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>click</td>
 	<td>name=add_cart_product</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>waitForText</td>
 	<td>css=div#cart a.content</td>
 	<td>Cart:<br> ${amount} item(s) - $${total}</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>click</td>
 	<td>css=div#cart a.content</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>waitForElementPresent</td>
 	<td>css=div#checkout-cart-wrapper</td>
 	<td></td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertValue</td>
 	<td>name=quantity</td>
 	<td>${amount}</td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertText</td>
 	<td>//div[@id='box-checkout-cart']/div/ul/li/form/div/p/a/strong</td>
 	<td>${title}</td>
@@ -198,39 +198,39 @@ a {
 <td><a name="testresult1">remove_from_card.html</a><br/><div>
 <table border="1" cellpadding="1" cellspacing="1">
 <thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">remove_from_card</td></tr>
+<tr class="title status_failed"><td rowspan="1" colspan="3">remove_from_card</td></tr>
 </thead><tbody>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>open</td>
 	<td>/en/</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="  status_failed" style="cursor: pointer;">
 	<td>click</td>
 	<td>css=div#cart a.content</td>
-	<td></td>
+	<td>Element&nbsp;css=div#cart&nbsp;a.content&nbsp;not&nbsp;found</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>waitForElementPresent</td>
 	<td>name=remove_cart_item</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>click</td>
 	<td>name=remove_cart_item</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>waitForElementPresent</td>
 	<td>//div[@id='checkout-cart-wrapper']/p/em</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>click</td>
 	<td>css=img[alt="My Store"]</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>waitForElementPresent</td>
 	<td>id=navigation</td>
 	<td></td>
@@ -244,29 +244,29 @@ a {
 <td><a name="testresult2">preview_image.html</a><br/><div>
 <table border="1" cellpadding="1" cellspacing="1">
 <thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">preview_image</td></tr>
+<tr class="title status_failed"><td rowspan="1" colspan="3">preview_image</td></tr>
 </thead><tbody>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>open</td>
 	<td>/en/</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="  status_failed" style="cursor: pointer;">
 	<td>mouseOver</td>
 	<td>css=a.fancybox &gt; i.fa-search</td>
-	<td></td>
+	<td>Element&nbsp;css=a.fancybox&nbsp;&gt;&nbsp;i.fa-search&nbsp;not&nbsp;found</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>click</td>
 	<td>css=a.fancybox &gt; i.fa-search</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>pause</td>
 	<td>1000</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>click</td>
 	<td>id=fancybox-close</td>
 	<td></td>
@@ -280,39 +280,39 @@ a {
 <td><a name="testresult3">verify_categories.html</a><br/><div>
 <table border="1" cellpadding="1" cellspacing="1">
 <thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">verify_categories</td></tr>
+<tr class="title status_failed"><td rowspan="1" colspan="3">verify_categories</td></tr>
 </thead><tbody>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>open</td>
 	<td>/en/</td>
 	<td></td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="  status_failed" style="cursor: pointer;">
 	<td>assertAttribute</td>
 	<td>//nav[@id='site-menu']/ul/li[2]/a@href</td>
-	<td>http://demo.litecart.net/en/rubber-ducks-c-1/</td>
+	<td>Element&nbsp;//nav[@id='site-menu']/ul/li[2]/a&nbsp;not&nbsp;found</td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertText</td>
 	<td>//nav[@id='site-menu']/ul/li[2]/a</td>
 	<td>Rubber Ducks</td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>clickAndWait</td>
 	<td>link=Rubber Ducks</td>
 	<td></td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertElementPresent</td>
 	<td>css=li.product img</td>
 	<td></td>
 </tr>
-<tr class="  status_done" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>clickAndWait</td>
 	<td>link=This n' that</td>
 	<td></td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertElementNotPresent</td>
 	<td>css=li.product img</td>
 	<td></td>
@@ -327,19 +327,19 @@ a {
 <td><a name="testresult4">verify_homepage_blocks.html</a><br/><div>
 <table border="1" cellpadding="1" cellspacing="1">
 <thead>
-<tr class="title status_passed"><td rowspan="1" colspan="3">verify_homepage_blocks</td></tr>
+<tr class="title status_failed"><td rowspan="1" colspan="3">verify_homepage_blocks</td></tr>
 </thead><tbody>
 <tr class="  status_done" style="cursor: pointer;">
 	<td>open</td>
 	<td>/en/</td>
 	<td></td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="  status_failed" style="cursor: pointer;">
 	<td>assertXpathCount</td>
 	<td>//div[@id='box-most-popular']/div/ul/li</td>
-	<td>5</td>
+	<td>Actual&nbsp;value&nbsp;'0'&nbsp;did&nbsp;not&nbsp;match&nbsp;'5'</td>
 </tr>
-<tr class="  status_passed" style="cursor: pointer;">
+<tr class="" style="cursor: pointer;">
 	<td>assertCssCount</td>
 	<td>div#box-campaigns &gt; div &gt; ul &gt; li</td>
 	<td>1</td>
@@ -353,55 +353,29 @@ a {
 </tr></table><pre>
 info: Starting test /selenium-server/tests/add_to_card.html
 info: Executing: |open | /en/ |  |
-info: Executing: |storeEval | Math.floor(1 + Math.random()*9) | amount |
-info: script is: Math.floor(1 + Math.random()*9)
+info: Executing: |storeEval | Math.floor(1 + Math.random()*19) | amount |
+info: script is: Math.floor(1 + Math.random()*19)
 info: Executing: |click | css=li.product img |  |
-info: Executing: |waitForElementPresent | name=quantity |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
-info: Executing: |storeText | css=h1.title | title |
-info: Executing: |assertText | css=span.price | $20 |
-info: Executing: |storeText | css=span.price | price |
-info: Executing: |storeEval | &quot;${price}&quot;.substring(1) | price |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
-info: script is: &quot;$20&quot;.substring(1)
-info: Executing: |storeEval | ${amount}*${price} | total |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
-info: script is: 5*20
-info: Executing: |type | name=quantity | ${amount} |
-info: Executing: |click | name=add_cart_product |  |
-info: Executing: |waitForText | css=div#cart a.content | Cart:
- ${amount} item(s) - $${total} |
-info: Executing: |click | css=div#cart a.content |  |
-info: Executing: |waitForElementPresent | css=div#checkout-cart-wrapper |  |
-info: Executing: |assertValue | name=quantity | ${amount} |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
-info: Executing: |assertText | //div[@id=&apos;box-checkout-cart&apos;]/div/ul/li/form/div/p/a/strong | ${title} |
+error: Element css=li.product img not found
+warn: currentTest.recordFailure: Element css=li.product img not found
 info: Starting test /selenium-server/tests/remove_from_card.html
 info: Executing: |open | /en/ |  |
 info: Executing: |click | css=div#cart a.content |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
-info: Executing: |waitForElementPresent | name=remove_cart_item |  |
-info: Executing: |click | name=remove_cart_item |  |
-info: Executing: |waitForElementPresent | //div[@id=&apos;checkout-cart-wrapper&apos;]/p/em |  |
-info: Executing: |click | css=img[alt=&quot;My Store&quot;] |  |
-info: Executing: |waitForElementPresent | id=navigation |  |
+error: Element css=div#cart a.content not found
+warn: currentTest.recordFailure: Element css=div#cart a.content not found
 info: Starting test /selenium-server/tests/preview_image.html
 info: Executing: |open | /en/ |  |
 info: Executing: |mouseOver | css=a.fancybox &gt; i.fa-search |  |
-info: Executing: |click | css=a.fancybox &gt; i.fa-search |  |
-info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
-info: Executing: |pause | 1000 |  |
-info: Executing: |click | id=fancybox-close |  |
+error: Element css=a.fancybox &gt; i.fa-search not found
+warn: currentTest.recordFailure: Element css=a.fancybox &gt; i.fa-search not found
 info: Starting test /selenium-server/tests/verify_categories.html
 info: Executing: |open | /en/ |  |
 info: Executing: |assertAttribute | //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a@href | http://demo.litecart.net/en/rubber-ducks-c-1/ |
-info: Executing: |assertText | //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a | Rubber Ducks |
-info: Executing: |clickAndWait | link=Rubber Ducks |  |
-info: Executing: |assertElementPresent | css=li.product img |  |
-info: Executing: |clickAndWait | link=This n&apos; that |  |
-info: Executing: |assertElementNotPresent | css=li.product img |  |
+error: Element //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a not found
+warn: currentTest.recordFailure: Element //nav[@id=&apos;site-menu&apos;]/ul/li[2]/a not found
 info: Starting test /selenium-server/tests/verify_homepage_blocks.html
 info: Executing: |open | /en/ |  |
 info: Executing: |assertXpathCount | //div[@id=&apos;box-most-popular&apos;]/div/ul/li | 5 |
-info: Executing: |assertCssCount | div#box-campaigns &gt; div &gt; ul &gt; li | 1 |
+error: Actual value &apos;0&apos; did not match &apos;5&apos;
+warn: currentTest.recordFailure: Actual value &apos;0&apos; did not match &apos;5&apos;
 </pre></body></html>
